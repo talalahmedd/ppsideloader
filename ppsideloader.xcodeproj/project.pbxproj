@@ -11,7 +11,8 @@
 		472ADDC61CC04250007D628E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 472ADDC51CC04250007D628E /* Info.plist */; };
 		472ADDC91CC04272007D628E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 472ADDC81CC04272007D628E /* AppDelegate.m */; };
 		472ADDCD1CC04291007D628E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472ADDCC1CC04291007D628E /* ViewController.m */; };
-		47F81AFB1CC1F03200460314 /* PP_SIDELOADER_OPTIONS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47F81AFA1CC1F03200460314 /* PP_SIDELOADER_OPTIONS.plist */; };
+                47F81AFB1CC1F03200460314 /* PP_SIDELOADER_OPTIONS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47F81AFA1CC1F03200460314 /* PP_SIDELOADER_OPTIONS.plist */; };
+                D41C25C3E985514CEAD2C495 /* ppsideloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9533F515443CA87F9557166F /* ppsideloaderTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,37 +25,49 @@
 		472ADDCC1CC04291007D628E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ppsideloader/ViewController.m; sourceTree = SOURCE_ROOT; };
 		4741EE651CBDFF09008F9CDF /* app.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = app.entitlements; sourceTree = SOURCE_ROOT; };
 		478649241CBE7D790090A40A /* modify_app */ = {isa = PBXFileReference; explicitFileType = text.script.sh; fileEncoding = 4; name = modify_app; path = script/modify_app; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.sh; };
-		47F81AFA1CC1F03200460314 /* PP_SIDELOADER_OPTIONS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PP_SIDELOADER_OPTIONS.plist; sourceTree = SOURCE_ROOT; };
+                47F81AFA1CC1F03200460314 /* PP_SIDELOADER_OPTIONS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PP_SIDELOADER_OPTIONS.plist; sourceTree = SOURCE_ROOT; };
+                9533F515443CA87F9557166F /* ppsideloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ppsideloaderTests/ppsideloaderTests.m; sourceTree = SOURCE_ROOT; };
+                C50C414F234DF15721F2467F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ppsideloaderTests/Info.plist; sourceTree = SOURCE_ROOT; };
+                F809CF80A093D5E220E78BEA /* ppsideloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ppsideloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		24208AD91BCDE89E00D78C93 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+                24208AD91BCDE89E00D78C93 /* Frameworks */ = {
+                        isa = PBXFrameworksBuildPhase;
+                        buildActionMask = 2147483647;
+                        files = (
+                        );
+                        runOnlyForDeploymentPostprocessing = 0;
+                };
+                930FAF5F54936C46834FA1CE /* Frameworks */ = {
+                        isa = PBXFrameworksBuildPhase;
+                        buildActionMask = 2147483647;
+                        files = (
+                        );
+                        runOnlyForDeploymentPostprocessing = 0;
+                };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24208AD31BCDE89E00D78C93 = {
-			isa = PBXGroup;
-			children = (
-				472ADDCA1CC04276007D628E /* Placeholder Classes */,
-				24208ADE1BCDE89E00D78C93 /* ppsideloader */,
-				24208ADD1BCDE89E00D78C93 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		24208ADD1BCDE89E00D78C93 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				24208ADC1BCDE89E00D78C93 /* ppsideloader.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
+                24208AD31BCDE89E00D78C93 = {
+                        isa = PBXGroup;
+                        children = (
+                                472ADDCA1CC04276007D628E /* Placeholder Classes */,
+                                6684F3BE04DFE23D145CBF13 /* ppsideloaderTests */,
+                                24208ADE1BCDE89E00D78C93 /* ppsideloader */,
+                                24208ADD1BCDE89E00D78C93 /* Products */,
+                        );
+                        sourceTree = "<group>";
+                };
+                24208ADD1BCDE89E00D78C93 /* Products */ = {
+                        isa = PBXGroup;
+                        children = (
+                                24208ADC1BCDE89E00D78C93 /* ppsideloader.app */,
+                                F809CF80A093D5E220E78BEA /* ppsideloaderTests.xctest */,
+                        );
+                        name = Products;
+                        sourceTree = "<group>";
+                };
 		24208ADE1BCDE89E00D78C93 /* ppsideloader */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,39 +89,65 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		472ADDCA1CC04276007D628E /* Placeholder Classes */ = {
-			isa = PBXGroup;
-			children = (
-				472ADDC71CC04272007D628E /* AppDelegate.h */,
-				472ADDC81CC04272007D628E /* AppDelegate.m */,
-				472ADDCB1CC04291007D628E /* ViewController.h */,
-				472ADDCC1CC04291007D628E /* ViewController.m */,
-			);
-			name = "Placeholder Classes";
-			path = flux.beta;
-			sourceTree = "<group>";
-		};
+                472ADDCA1CC04276007D628E /* Placeholder Classes */ = {
+                        isa = PBXGroup;
+                        children = (
+                                472ADDC71CC04272007D628E /* AppDelegate.h */,
+                                472ADDC81CC04272007D628E /* AppDelegate.m */,
+                                472ADDCB1CC04291007D628E /* ViewController.h */,
+                                472ADDCC1CC04291007D628E /* ViewController.m */,
+                        );
+                        name = "Placeholder Classes";
+                        path = flux.beta;
+                        sourceTree = "<group>";
+                };
+                6684F3BE04DFE23D145CBF13 /* ppsideloaderTests */ = {
+                        isa = PBXGroup;
+                        children = (
+                                9533F515443CA87F9557166F /* ppsideloaderTests.m */,
+                                C50C414F234DF15721F2467F /* Info.plist */,
+                        );
+                        path = ppsideloaderTests;
+                        sourceTree = "<group>";
+                };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		24208ADB1BCDE89E00D78C93 /* ppsideloader */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 24208AF31BCDE89E00D78C93 /* Build configuration list for PBXNativeTarget "ppsideloader" */;
-			buildPhases = (
-				24208AD81BCDE89E00D78C93 /* Sources */,
-				24208AD91BCDE89E00D78C93 /* Frameworks */,
-				24208ADA1BCDE89E00D78C93 /* Resources */,
-				473D787B1CBAEAA600BA76CD /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ppsideloader;
-			productName = flux.beta;
-			productReference = 24208ADC1BCDE89E00D78C93 /* ppsideloader.app */;
-			productType = "com.apple.product-type.application";
-		};
+                24208ADB1BCDE89E00D78C93 /* ppsideloader */ = {
+                        isa = PBXNativeTarget;
+                        buildConfigurationList = 24208AF31BCDE89E00D78C93 /* Build configuration list for PBXNativeTarget "ppsideloader" */;
+                        buildPhases = (
+                                24208AD81BCDE89E00D78C93 /* Sources */,
+                                24208AD91BCDE89E00D78C93 /* Frameworks */,
+                                24208ADA1BCDE89E00D78C93 /* Resources */,
+                                473D787B1CBAEAA600BA76CD /* ShellScript */,
+                        );
+                        buildRules = (
+                        );
+                        dependencies = (
+                        );
+                        name = ppsideloader;
+                        productName = flux.beta;
+                        productReference = 24208ADC1BCDE89E00D78C93 /* ppsideloader.app */;
+                        productType = "com.apple.product-type.application";
+                };
+                4D834454F83D25FD0D4A85E4 /* ppsideloaderTests */ = {
+                        isa = PBXNativeTarget;
+                        buildConfigurationList = 9E448DC4626254B1B94C7208 /* Build configuration list for PBXNativeTarget "ppsideloaderTests" */;
+                        buildPhases = (
+                                A9A38BFDDE0C65D5A44DAC91 /* Sources */,
+                                930FAF5F54936C46834FA1CE /* Frameworks */,
+                                AA214BB32EC1D660021ADE8F /* Resources */,
+                        );
+                        buildRules = (
+                        );
+                        dependencies = (
+                        );
+                        name = ppsideloaderTests;
+                        productName = ppsideloaderTests;
+                        productReference = F809CF80A093D5E220E78BEA /* ppsideloaderTests.xctest */;
+                        productType = "com.apple.product-type.bundle.unit-test";
+                };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -117,24 +156,29 @@
 			attributes = {
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "f.lux Software LLC";
-				TargetAttributes = {
-					24208ADB1BCDE89E00D78C93 = {
-						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 9999T6G2M8;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-							com.apple.DataProtection = {
-								enabled = 1;
-							};
-							com.apple.Keychain = {
-								enabled = 1;
-							};
-						};
-					};
-				};
-			};
+                                TargetAttributes = {
+                                        24208ADB1BCDE89E00D78C93 = {
+                                                CreatedOnToolsVersion = 7.0.1;
+                                                DevelopmentTeam = 9999T6G2M8;
+                                                SystemCapabilities = {
+                                                        com.apple.ApplicationGroups.iOS = {
+                                                                enabled = 1;
+                                                        };
+                                                        com.apple.DataProtection = {
+                                                                enabled = 1;
+                                                        };
+                                                        com.apple.Keychain = {
+                                                                enabled = 1;
+                                                        };
+                                                };
+                                        };
+                                        4D834454F83D25FD0D4A85E4 = {
+                                                CreatedOnToolsVersion = 7.0.1;
+                                                DevelopmentTeam = 9999T6G2M8;
+                                                TestTargetID = 24208ADB1BCDE89E00D78C93;
+                                        };
+                                };
+                        };
 			buildConfigurationList = 24208AD71BCDE89E00D78C93 /* Build configuration list for PBXProject "ppsideloader" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -147,22 +191,30 @@
 			productRefGroup = 24208ADD1BCDE89E00D78C93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
-			targets = (
-				24208ADB1BCDE89E00D78C93 /* ppsideloader */,
-			);
-		};
+                        targets = (
+                                24208ADB1BCDE89E00D78C93 /* ppsideloader */,
+                                4D834454F83D25FD0D4A85E4 /* ppsideloaderTests */,
+                        );
+                };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		24208ADA1BCDE89E00D78C93 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				472ADDC61CC04250007D628E /* Info.plist in Resources */,
-				47F81AFB1CC1F03200460314 /* PP_SIDELOADER_OPTIONS.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+                24208ADA1BCDE89E00D78C93 /* Resources */ = {
+                        isa = PBXResourcesBuildPhase;
+                        buildActionMask = 2147483647;
+                        files = (
+                                472ADDC61CC04250007D628E /* Info.plist in Resources */,
+                                47F81AFB1CC1F03200460314 /* PP_SIDELOADER_OPTIONS.plist in Resources */,
+                        );
+                        runOnlyForDeploymentPostprocessing = 0;
+                };
+                AA214BB32EC1D660021ADE8F /* Resources */ = {
+                        isa = PBXResourcesBuildPhase;
+                        buildActionMask = 2147483647;
+                        files = (
+                        );
+                        runOnlyForDeploymentPostprocessing = 0;
+                };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -182,16 +234,24 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		24208AD81BCDE89E00D78C93 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				472ADDCD1CC04291007D628E /* ViewController.m in Sources */,
-				472ADDC91CC04272007D628E /* AppDelegate.m in Sources */,
-				472ADDC41CC04240007D628E /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+                24208AD81BCDE89E00D78C93 /* Sources */ = {
+                        isa = PBXSourcesBuildPhase;
+                        buildActionMask = 2147483647;
+                        files = (
+                                472ADDCD1CC04291007D628E /* ViewController.m in Sources */,
+                                472ADDC91CC04272007D628E /* AppDelegate.m in Sources */,
+                                472ADDC41CC04240007D628E /* main.m in Sources */,
+                        );
+                        runOnlyForDeploymentPostprocessing = 0;
+                };
+                A9A38BFDDE0C65D5A44DAC91 /* Sources */ = {
+                        isa = PBXSourcesBuildPhase;
+                        buildActionMask = 2147483647;
+                        files = (
+                                D41C25C3E985514CEAD2C495 /* ppsideloaderTests.m in Sources */,
+                        );
+                        runOnlyForDeploymentPostprocessing = 0;
+                };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -293,22 +353,48 @@
 			};
 			name = Debug;
 		};
-		24208AF51BCDE89E00D78C93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "${SRCROOT}/app.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "please-select-a-team-and-change-this";
-				PRODUCT_NAME = ppsideloader;
-				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
+                24208AF51BCDE89E00D78C93 /* Release */ = {
+                        isa = XCBuildConfiguration;
+                        buildSettings = {
+                                CODE_SIGN_ENTITLEMENTS = "${SRCROOT}/app.entitlements";
+                                CODE_SIGN_IDENTITY = "iPhone Developer";
+                                "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+                                INFOPLIST_FILE = Info.plist;
+                                IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+                                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                                LIBRARY_SEARCH_PATHS = "$(inherited)";
+                                PRODUCT_BUNDLE_IDENTIFIER = "please-select-a-team-and-change-this";
+                                PRODUCT_NAME = ppsideloader;
+                                PROVISIONING_PROFILE = "";
+                        };
+                        name = Release;
+                };
+                5B9114794CC7B2B6FE63647C /* Debug */ = {
+                        isa = XCBuildConfiguration;
+                        buildSettings = {
+                                INFOPLIST_FILE = ppsideloaderTests/Info.plist;
+                                IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+                                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                                PRODUCT_BUNDLE_IDENTIFIER = "com.example.ppsideloaderTests";
+                                PRODUCT_NAME = "$(TARGET_NAME)";
+                                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ppsideloader.app/ppsideloader";
+                                BUNDLE_LOADER = "$(TEST_HOST)";
+                        };
+                        name = Debug;
+                };
+                C2FE650C22D9F3174A339D25 /* Release */ = {
+                        isa = XCBuildConfiguration;
+                        buildSettings = {
+                                INFOPLIST_FILE = ppsideloaderTests/Info.plist;
+                                IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+                                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                                PRODUCT_BUNDLE_IDENTIFIER = "com.example.ppsideloaderTests";
+                                PRODUCT_NAME = "$(TARGET_NAME)";
+                                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ppsideloader.app/ppsideloader";
+                                BUNDLE_LOADER = "$(TEST_HOST)";
+                        };
+                        name = Release;
+                };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -321,15 +407,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24208AF31BCDE89E00D78C93 /* Build configuration list for PBXNativeTarget "ppsideloader" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24208AF41BCDE89E00D78C93 /* Debug */,
-				24208AF51BCDE89E00D78C93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+                24208AF31BCDE89E00D78C93 /* Build configuration list for PBXNativeTarget "ppsideloader" */ = {
+                        isa = XCConfigurationList;
+                        buildConfigurations = (
+                                24208AF41BCDE89E00D78C93 /* Debug */,
+                                24208AF51BCDE89E00D78C93 /* Release */,
+                        );
+                        defaultConfigurationIsVisible = 0;
+                        defaultConfigurationName = Release;
+                };
+                9E448DC4626254B1B94C7208 /* Build configuration list for PBXNativeTarget "ppsideloaderTests" */ = {
+                        isa = XCConfigurationList;
+                        buildConfigurations = (
+                                5B9114794CC7B2B6FE63647C /* Debug */,
+                                C2FE650C22D9F3174A339D25 /* Release */,
+                        );
+                        defaultConfigurationIsVisible = 0;
+                        defaultConfigurationName = Release;
+                };
 /* End XCConfigurationList section */
 	};
 	rootObject = 24208AD41BCDE89E00D78C93 /* Project object */;
