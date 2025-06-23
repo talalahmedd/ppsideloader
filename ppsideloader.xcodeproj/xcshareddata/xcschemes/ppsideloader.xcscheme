@@ -39,6 +39,20 @@
                ReferencedContainer = "container:ppsideloader.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4D834454F83D25FD0D4A85E4"
+               BuildableName = "ppsideloaderTests.xctest"
+               BlueprintName = "ppsideloaderTests"
+               ReferencedContainer = "container:ppsideloader.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -47,6 +61,16 @@
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4D834454F83D25FD0D4A85E4"
+               BuildableName = "ppsideloaderTests.xctest"
+               BlueprintName = "ppsideloaderTests"
+               ReferencedContainer = "container:ppsideloader.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
